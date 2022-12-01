@@ -5,6 +5,6 @@
 1. Установите пакеты
    `yarn` или `npm install`
 2. Запустите сервер
-   `yarn start` или `npm start`
+   `yarn start` или `npm run start`
 
 После сервер откроется в браузере по адресу `http://localhost:3000`
