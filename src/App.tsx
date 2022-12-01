@@ -1,13 +1,20 @@
 import React from "react";
+import { Box } from "@mui/material";
 import Container from "./components/Container";
 import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="w-screen h-screen bg-white App">
+    <Box
+      className="App"
+      sx={{
+        height: "100%",
+        width: "100%",
+      }}
+    >
       <Header />
       <Container />
-    </div>
+    </Box>
   );
 }
 

@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import { useState } from "react";
 import Customization from "./Customization";
 import ExportButtons from "./ExportButtons";
@@ -7,11 +8,18 @@ function Container() {
   const [url, setUrl] = useState("");
 
   return (
-    <div className="flex ml-5 mt-5">
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        marginLeft: "1.25rem",
+        marginTop: "1.25rem",
+      }}
+    >
       <Url setUrl={setUrl} />
       {/* <Customization /> */}
       <ExportButtons url={url} />
-    </div>
+    </Box>
   );
 }
 
